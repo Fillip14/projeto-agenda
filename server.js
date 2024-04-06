@@ -22,6 +22,7 @@ const {
 app.use(
   helmet({
     strictTransportSecurity: false,
+    contentSecurityPolicy: false,
   })
 );
 app.use(express.urlencoded({ extended: true }));
